@@ -1,0 +1,78 @@
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVGXCBtZ_xHu8a6Q01xe9f_NBjdJeGhe4Cc6qfUGkWk8hmLQXYjSaLPE8icMHF8XtSLvM:https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_Germany_%25281867%25E2%2580%25931918%2529.svg/255px-Flag_of_Germany_%25281867%25E2%2580%25931918%2529.svg.png&usqp=CAU");
+    background-size: 1500px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-family: arial;
+}
+#all-contents {
+  max-width: 800px;
+    margin: auto;
+}
+
+/* navigation menu */
+nav {
+    background: rgb(225, 225, 225);
+    margin: 0 auto;
+    display: flex;
+    padding: 10px;
+}
+h1 {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0;
+    font-family: garamond;
+    color: black;
+}
+#nav-ul {
+    list-style-image: none;
+    font-family: garamond;
+}
+.nav-li {
+    display: inline-block;
+    padding: 0 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* main container area beneath menu */
+main {
+    background: rgb(255, 0, 0);
+    display: flex;
+}
+.sidebar {
+    margin-right: 25px;
+    padding: 10px;
+    background: white;
+    border: 5px black ridge;
+}
+.sidebar-img {
+    width: 200px;
+}
+.content {
+    flex: 1;
+    padding: 15px;
+    font-family: garamond;
+    color: purple;
+}
+
+/* portfolio styles */
+#interests {
+    border: 4px black ridge;
+    padding: 8px;
+  
+}
+h2, h3 {
+    margin: 0px;
+  
+}
+ul{
+list-style:none
+}
+#star li::before{
+content: "\2605";
+color: gold;
+}
