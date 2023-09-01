@@ -73,6 +73,6 @@ ul{
 list-style:none
 }
 #star li::before{
-list-style-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e8/Rotating-golden-star.gif");
+content: "\2605";
 color: gold;
 }
