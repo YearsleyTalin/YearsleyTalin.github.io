@@ -73,6 +73,6 @@ ul{
 list-style:none
 }
 #star li::before{
-content: "\2605";
-color: gold;
+    content: "\2605";
+    color: gold;
 }
