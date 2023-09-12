@@ -28,12 +28,12 @@ $(function () {
      * Comment the lines out to remove the grid
      */
 
-    // for (let i = 100; i < canvas.width; i += 100) {
-    //   createPlatform(i, canvas.height, -1, -canvas.height);
-    // }
-    // for (let i = 100; i < canvas.height; i += 100) {
-    //   createPlatform(canvas.width, i, -canvas.width, -1);
-    // }
+    for (let i = 100; i < canvas.width; i += 100) {
+      createPlatform(i, canvas.height, -1, -canvas.height);
+    }
+    for (let i = 100; i < canvas.height; i += 100) {
+      createPlatform(canvas.width, i, -canvas.width, -1);
+    }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -43,9 +43,22 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-
-
-
+createPlatform(0,650,50,2)
+createPlatform(50,550,50,2)
+createPlatform(99,0,2,652)
+createPlatform(0,450,50,2)
+createPlatform(50,350,50,2)
+createPlatform(0,250,50,2)
+createPlatform(50,150,50,2)
+createPlatform(100,650,50,2)
+createPlatform(150,550,50,2)
+createPlatform(199,100,2,652)
+createPlatform(100,450,50,2)
+createPlatform(150,350,50,2)
+createPlatform(100,250,50,2)
+createPlatform(150,150,50,2)
+createPlatform(200,100,50,2)
+createPlatform(249,100,2,100)
     
     // TODO 2
     // Create collectables
