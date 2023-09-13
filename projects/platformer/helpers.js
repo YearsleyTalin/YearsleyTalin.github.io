@@ -366,9 +366,9 @@ function deathOfPlayer() {
     canvas.height / 2
   );
   ctx.fillStyle = "black";
-  ctx.font = "800% serif";
+  ctx.font = "475% serif";
   ctx.fillText(
-    "You are dead",
+    "I didn't say it was easy",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 5,
     (canvas.width / 16) * 14
