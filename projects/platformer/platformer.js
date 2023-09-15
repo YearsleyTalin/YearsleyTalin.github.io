@@ -62,6 +62,7 @@ createPlatform(249,100,2,85)
 createPlatform(250,300,50,2)
 createPlatform(249,300,2,450)
 // createPlatform(200,400,50,2)
+createPlatform(370,150,125,2)
     
     // TODO 2
     // Create collectables
@@ -69,6 +70,8 @@ createPlatform(249,300,2,450)
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 createCollectable('eagle',205,115,0,0)
+createCollectable('eagle',5,700,0,0)
+createCollectable('eagle',485,105,0,0)
 
 
 
@@ -78,6 +81,10 @@ createCollectable('eagle',205,115,0,0)
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 createCannon('bottom',165,3000,15,15)
+createCannon('right',425,5000,300,300)
+createCannon('bottom',365,2250,10,10)
+createCannon('bottom',390,2500,15,15)
+createCannon('bottom',415,2750,15,15)
 
 
 
