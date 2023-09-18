@@ -1,6 +1,6 @@
 // setup variables
 const walkAcceleration = 2.5; // how much is added to the speed each frame
-const gravity = 0.5; // how much is subtracted from speedY each frame
+var gravity = 0.5; // how much is subtracted from speedY each frame
 const friction = 1.5; // how much the player is slowed each frame
 const maxSpeed = 8; // maximum horizontal speed, not vertical
 const playerJumpStrength = 12; // this is subtracted from the speedY each jump

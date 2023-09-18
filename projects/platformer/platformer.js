@@ -28,12 +28,12 @@ $(function () {
      * Comment the lines out to remove the grid
      */
 
-    for (let i = 100; i < canvas.width; i += 100) {
-      createPlatform(i, canvas.height, -1, -canvas.height);
-    }
-    for (let i = 100; i < canvas.height; i += 100) {
-      createPlatform(canvas.width, i, -canvas.width, -1);
-    }
+    // for (let i = 100; i < canvas.width; i += 100) {
+    //   createPlatform(i, canvas.height, -1, -canvas.height);
+    // }
+    // for (let i = 100; i < canvas.height; i += 100) {
+    //   createPlatform(canvas.width, i, -canvas.width, -1);
+    // }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -63,6 +63,10 @@ createPlatform(250,300,50,2)
 createPlatform(249,300,2,450)
 // createPlatform(200,400,50,2)
 createPlatform(370,150,125,2)
+createPlatform(0,0,3,750)
+createPlatform(0,0,1400,3)
+createPlatform(1397,0,3,750)
+createPlatform(0,747,1400,3)
     
     // TODO 2
     // Create collectables
@@ -81,7 +85,7 @@ createCollectable('eagle',485,105,0,0)
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 createCannon('bottom',165,3000,15,15)
-createCannon('right',425,5000,300,300)
+createCannon('right',440,5000,300,300)
 createCannon('bottom',365,2250,10,10)
 createCannon('bottom',390,2500,15,15)
 createCannon('bottom',415,2750,15,15)

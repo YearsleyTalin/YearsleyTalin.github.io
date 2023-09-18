@@ -411,7 +411,7 @@ function playerFrictionAndGravity() {
 
 function drawPlatforms() {
   for (var i = 0; i < platforms.length; i++) {
-    ctx.fillStyle = "grey";
+    ctx.fillStyle = "orange";
     ctx.fillRect(
       platforms[i].x,
       platforms[i].y,
@@ -450,7 +450,7 @@ function drawCannons() {
       cannons[i].projectileCountdown = cannons[i].projectileCountdown + 1;
     }
 
-    ctx.fillStyle = "grey";
+    ctx.fillStyle = "orange";
     ctx.save(); //save the current translation of the screen.
     ctx.translate(cannons[i].x, cannons[i].y); //you are moving the top left of the screen to the pictures location, this is because you can't rotate the image, you have to rotate the whole page
     ctx.rotate((cannons[i].rotation * Math.PI) / 180); //then you rotate. rotation is centered on 0,0 on the canvas, which is why we moved the picture to 0,0 with translate(x,y)
@@ -678,12 +678,14 @@ function handleKeyDown(e) {
   keyPress.any = true;
   if (e.key === "ArrowUp" || e.key === "w") {
     keyPress.up = true;
+    gravity = 0.2
   }
   if (e.key === "ArrowLeft" || e.key === "a") {
     keyPress.left = true;
   }
   if (e.key === "ArrowDown" || e.key === "s") {
     keyPress.down = true;
+    gravity = 5
   }
   if (e.key === "ArrowRight" || e.key === "d") {
     keyPress.right = true;
@@ -696,6 +698,7 @@ function handleKeyDown(e) {
 function handleKeyUp(e) {
   if (e.key === "ArrowUp" || e.key === "w") {
     keyPress.up = false;
+    gravity = 0.5
   }
   if (e.key === "ArrowLeft" || e.key === "a") {
     keyPress.left = false;
@@ -706,6 +709,7 @@ function handleKeyUp(e) {
       duckTimer = 8;
       frameIndex = 20;
     }
+    gravity = 0.5
   }
   if (e.key === "ArrowRight" || e.key === "d") {
     keyPress.right = false;
