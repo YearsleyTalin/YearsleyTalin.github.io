@@ -14,6 +14,7 @@ $(function () {
       firstTimeSetup = false;
       //start game
       setInterval(main, 1000 / frameRate);
+      var difficulty = prompt("What difficulty do you want? 'easy' 'normal' or 'hard'");
     }
     //create walls
     createPlatform(-50, -50, canvas.width + 100, 50); //top
@@ -84,11 +85,28 @@ createCollectable('eagle',485,105,0,0)
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-createCannon('bottom',165,3000,15,15)
-createCannon('right',440,5000,300,300)
-createCannon('bottom',365,2250,10,10)
-createCannon('bottom',390,2500,15,15)
-createCannon('bottom',415,2750,15,15)
+if (difficulty === "easy") {
+  createCannon('bottom',165,6000,15,15)
+  createCannon('right',440,10000,300,300)
+  createCannon('bottom',365,4500,15,15)
+  createCannon('bottom',390,5000,15,15)
+  createCannon('bottom',415,5500,15,15)
+}
+if (difficulty === "normal") {
+  createCannon('bottom',165,3000,15,15)
+  createCannon('right',440,5000,300,300)
+  createCannon('bottom',365,2250,15,15)
+  createCannon('bottom',390,2500,15,15)
+  createCannon('bottom',415,2750,15,15)
+}
+
+if (difficulty === "hard") {
+  createCannon('bottom',165,3000,50,50)
+  createCannon('right',440,5000,300,300)
+  createCannon('bottom',365,2250,25,25)
+  createCannon('bottom',390,2500,25,25)
+  createCannon('bottom',415,2750,25,25)
+}
 
 
 
