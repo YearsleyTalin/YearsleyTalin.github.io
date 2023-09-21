@@ -16,6 +16,10 @@ $(function () {
       setInterval(main, 1000 / frameRate);
       var difficulty = prompt("What difficulty do you want? 'easy' 'normal' or 'hard'");
     }
+    if(difficulty !== "easy" && difficulty !== "normal" && difficulty !== "hard") {
+      alert("Invalid Response")
+      location.reload()
+    }
     //create walls
     createPlatform(-50, -50, canvas.width + 100, 50); //top
     createPlatform(-50, canvas.height - 10, canvas.width + 100, 200); //right
