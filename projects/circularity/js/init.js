@@ -32,8 +32,9 @@ var init = function (window) {
         }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-
-        for (var circel = 0; circel < 100; circel++) {
+        var aNumber = Math.ceil(Math.random()*100) + 100
+        
+        for (var circel = 0; circel < aNumber; circel++) {
             drawCircle()
         }
 
